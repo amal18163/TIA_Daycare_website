@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!--
+FILE NAME: programs_activities.html
+AUTHOR: Yuanzhen Pan
+DATE: April 23 2016
+Explanation: The Activities Page showcases the activities provided by the daycare
+center. It consists of a manual slideshow along with four text sections, namely,
+Arts and Crafts, Story Time, Structured Play, and Story Time. While the slideshow
+allows prospective parents to look through the photos at their own pace, the text provides
+descriptions of the activities available to children. This page aims to give
+a good overview of the acitivies at the daycare center though both text and visual
+display. -->
+
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "author" content = "Yuanzhen Pan">
+        <title> Activities </title>
+        <link href = "style.css" rel = "Stylesheet">
+        <link href = "activities.css" rel = "Stylesheet">
+
+        <!--Google Fonts: Roboto Condensed, Finger Paint, Amatic SC, and Indie Flower -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+   <body>
+
+        <div class = "all_content">
+
+            <!--Header dynamically added from index.html-->
+            <div id = "header_here"> </div>
+
+            <!--Navigation menu dynamically added from index.html-->
+            <div id = "nav_here"></div>
+
+            <div class = "main_content" id = "main_activities">
+
+                <h1>Activities</h1>
+
+                <div id="manual_slideshow">
+                    <span class="slideshow_buttons" id="previous_button" onclick="minusOne()">❮</span>
+
+                    <figure id="slideshow">
+                     <img  src="images/slideshow_1.png" alt="TIA Activity Photos">
+                     <figcaption></figcaption>
+                    </figure>
+
+                    <span  class="slideshow_buttons" id="next_button" onclick="plusOne()">❯</span>
+              </div>
+
+
+                   <!--*****************************************************************************************
+                          Decriptions for Different Activities
+                   ***************************************************************************************** -->
+
+                       <section id = "story_time" class = "activities_text">
+                           <h2> Story Time </h2>
+                           <p> Usu impetus persius an, quo harum phaedrum ei. Quis
+                              dicunt labitur quo an, doctus blandit vim an, mei
+                              vide impedit te. Labore invidunt id duo. Pro tota
+                              delicata ut. </p>
+                       </section> <!--End story_time-->
+
+
+                       <section id = "structured_play" class = "activities_text">
+                          <h2> Structured Play </h2>
+                          <p> Usu impetus persius an, quo harum phaedrum ei. Quis
+                             dicunt labitur quo an, doctus blandit vim an, mei
+                             vide impedit te. </p>
+                       </section> <!--End structured_play-->
+
+                        <section id = "arts_and_crafts" class = "activities_text">
+                            <h2> Arts and Crafts </h2>
+                            <p> Usu impetus persius an, quo harum phaedrum ei. Quis
+                               dicunt labitur quo an, doctus blandit vim an, mei
+                               vide impedit te. Ei qui congue maluisset liberavisse.
+                                In eam eripuit appetere, mei viris aliquid ne,
+                                 modo porro at sit. Duo commodo delicatissimi no,
+                                  noster appellantur vix id, ea pro quod ubique
+                                   utroque. Vim id nusquam scriptorem.</p>
+                        </section> <!--End arts_and_crafts section-->
+
+                        <section id = "circle_time" class = "activities_text">
+                           <h2> Circle Time </h2>
+                           <p> Usu impetus persius an, quo harum phaedrum ei. Quis
+                              dicunt labitur quo an, doctus blandit vim an, mei
+                              vide impedit te. </p>
+                        </section> <!--End circle_time-->
+      </div> <!--End main_content-->
+
+        <!--Footer dynamically added from index.html-->
+        <div id = "footer_here"> </div>
+
+        <!--Validation Icons and Signature dynamically added from index.html-->
+        <div id = "icon_sig_here"></div>
+
+      </div> <!--End all_content-->
+
+
+      <!--_____________________________Javascript Files_____________________________________ -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src = "set_site_colors.js"></script> <!--Sets Site's Color Palette-->
+      <script src = "nav_bar.js"></script> <!--Programs Tab's Drop Down Menu-->
+      <script src = "animate.js"></script> <!--Image Animations (Logo, Train, etc.)-->
+      <script src = "load.js"></script> <!--Loads JS Functions Onto All Pages-->
+      <script src = "slideshow.js"></script><!--Set up the manual slideshow-->
+
+  </body>
+
+  </html>

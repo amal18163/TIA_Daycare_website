@@ -1,0 +1,61 @@
+/*
+FILE NAME: health-safety.css
+WRITTEN BY: Yuanzhen Pan
+DATE: April 19 2016
+
+PURPOSE: Child Safety Stylesheet
+CSS Styling for Child Safety Page
+*/
+
+h1{
+  margin-bottom:15px;
+}
+
+body{
+     background-color:  #8fccba;
+
+}
+
+
+
+#main_health_safety{
+  height:610px;
+   position: relative;
+}
+#health_safety_text{
+  background-color: #FED40C;
+  height:445px;
+  margin-left: 15px;
+  margin-right: 15px;
+  width:550px;
+  padding:15px;
+  float:left;
+}
+
+
+#safety_2{
+  margin-top: 10px;
+  height:230px;
+  width:320px;
+}
+
+#safety_1{
+  height:230px;
+  width:320px;
+}
+
+
+#first_aid{
+  height:120px;
+  width:120px;
+  position:absolute;
+  right:100px;
+  top:0px;
+  z-index:20;
+}
+
+h2{
+  margin: 1%;
+  font-family: "Finger Paint", cursive;
+  font-size: 120%;
+}

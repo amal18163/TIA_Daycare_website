@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!--
+FILE NAME: programs_care.html
+WRITTEN BY: Amal Tidjani
+DATE: April 2016
+
+PURPOSE: Daycare's Child Care Page
+
+The Child Care Page is meant to inform prospective parents of the daycare's
+program offerings: 1) Full-Time, 2) Part-Time, and 3) Potty Training. This
+page is divided into 3 columns, with each column corresponding to one of the
+daycare's three programs. Within each column is an image and text section
+elaborating on said program offerings. -->
+
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "author" content = "Amal Tidjani">
+        <title> Child Care </title>
+        <link href = "style.css" rel = "Stylesheet">
+
+        <!--Google Fonts: Roboto Condensed, Finger Paint, Amatic SC, and Indie Flower-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+   </head>
+
+   <body>
+
+        <!--Wrapper div that contains all universal html content (i.e. header, main content,
+            and footer) and individual page contents (i.e. sections, images, etc.)-->
+        <div class = "all_content">
+
+            <!--Header dynamically loaded in from index.html-->
+            <div id = "header_here"> </div>
+
+            <!--Navigation Menu dynamically loaded in from index.html-->
+            <div id = "nav_here"></div>
+
+            <!--***************************************************************************
+                  MAIN CONTENT (Large White Box Containing Content Specific to Care Page)
+                ************************************************************************-->
+            <div class = "main_content" id = "main_care">
+
+                <h1> Child Care </h1>
+
+                <!--__________________ Textual Section (Child Care Programs) ____________________ -->
+                <!-- This section is divided into 3 columns corresponding to each of the daycare's
+                     programs: "Full-Time", "Part-Time", and "Potty Training." Each column consists
+                     of an image and a text section. -->
+
+                <!--_________ Section 1: Full Time _________________ -->
+                <section class = "care_column" id = "care_column1">
+
+                    <!--Image in Colored Div-->
+                    <div class = "i_container" id = "i_container1">
+                        <img src = "images/care_1.png" alt = "Children Coloring">
+                        <!--WARNING: Filler Image (Potentially Copyrighted)-->
+                    </div>
+
+                    <!--Text Section in Colored Div-->
+                    <div class = "t_container care_t_container" id ="t_container1">
+                        <h2> Full-Time </h2>
+                        <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusan tium dolor em que Lorem ipsum dolor sit amet, conse cte
+                            tur adipiscing elit, sed ipsum dolor sit amet laudantium, totam
+                            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                        </p>
+                    </div>
+                </section> <!--End Section 1-->
+
+                <!--_________ Section 2: Part Time _________________ -->
+                <section class = "care_column" id = "care_column2">
+
+                    <!--Image in Colored Div-->
+                    <div class = "i_container" id = "i_container2">
+                        <img src = "images/care_2.png" alt = "Girl Napping">
+                        <!--WARNING: Filler Image (Potentially Copyrighted)-->
+                    </div>
+
+                    <!--Text Section in Colored Div-->
+                    <div class = "t_container care_t_container" id ="t_container2">
+                        <h2> Part-Time </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, conse cte tur adipi scing elit, sed ipsum
+                            dolor sit amet Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusan tium dolor em que laudan tium, totam rem aperiam,
+                            eaque ipsa quae ab illo inv entore veritatis eter.
+                        </p>
+                   </div>
+                </section> <!--End Section 2-->
+
+                <!--_________ Section 3: Potty Training _________________ -->
+                <section class = "care_column" id = "care_column3">
+
+                    <!--Image in Colored Div-->
+                    <div class = "i_container" id = "i_container3">
+                        <img src = "images/care_3.png" alt = "Toddler on Potty">
+                        <!--WARNING: Filler Image (Potentially Copyrighted)-->
+                    </div>
+
+                    <!--Text in Colored Div-->
+                    <div class = "t_container care_t_container" id ="t_container3">
+                        <h2> Potty-Training </h2>
+                        <p>
+                            Nemo enim veritatis et ipsum consecte adipiscing sed om nis voluptaem.
+                            Lorem ipsum dolor sit amet, conse cte tur adipi scing elit, sed ipsum
+                            dolor sit amet Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusan tium dolor em que laudan tium.
+                        </p>
+                    </div>
+                </section> <!--End Section 3-->
+
+            </div> <!--End main_content-->
+
+            <!--Footer dynamically added from index.html-->
+            <div id = "footer_here"> </div>
+
+            <!--Validation Icons and Signature dynamically added from index.html-->
+            <div id = "icon_sig_here"></div>
+
+        </div> <!--End all_content-->
+
+
+        <!--_____________________________Javascript Files_____________________________________ -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src = "set_site_colors.js"></script> <!--Sets Site's Color Palette-->
+        <script src = "nav_bar.js"></script> <!--Programs Tab's Drop Down Menu-->
+        <script src = "animate.js"></script> <!--Image Animations (Logo, Train, etc.)-->
+        <!-- <script src = "button.js"></script> -->
+        <script src = "load.js"></script> <!--Loads JS Functions Onto All Pages-->
+
+  </body>
+
+</html>

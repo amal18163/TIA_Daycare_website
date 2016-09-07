@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!--
+FILE NAME: index.html
+WRITTEN BY: Amal Tidjani
+DATE: April 2016
+
+PURPOSE: Daycare Site's Home Page
+
+The Home Page is designed so that prospective parents may enjoy a glimpse of
+TIA's Daycare and its offerings. The Home Page consists of both universal content,
+which will be dynamically loaded onto the other pages of the site, and content
+unique to the Home Page. The universal content includes: 1) Header banner containing
+the daycare's logo, 2) Navigation bar, 3) Large white box containing the page's unique
+content, 4) Footer, and 5) "Dog Tag" section containing validation icons and signatures.
+Specific to the Home Page is an automatic slideshow containing images of the daycare
+and four text sections highlighting the daycare's main features. -->
+
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "author" content = "Amal Tidjani">
+        <title> TIA Daycare Home </title>
+        <link href = "style.css" rel = "Stylesheet">
+
+        <!--Google Fonts: Roboto Condensed, Finger Paint, Amatic SC, and Indie Flower-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+
+        <!--Wrapper div that contains all universal html content (i.e. header, main content,
+            and footer) and individual page contents (i.e. sections, images, etc.)-->
+        <div class = "all_content">
+
+            <!--***********************************************************
+                  HEADER CONTENT (LOGOS)
+                ********************************************************-->
+            <header>
+                <!--__________________ DAYCARE LOGO______________________ -->
+
+                <a href = "index.html"> <!--Logo redirects to home page on click-->
+                    <!--Place logo image and title in a container-->
+                    <div class = "daycare_logo" id = "daycare_header">
+                        <!--Logo Image (Apple)-->
+                        <img class = "logo_image daycare_img" id = "day_img_header"
+                             src = "images/daycare_logo.png"  alt = "TIA Daycare Logo"
+                             title = "Go To TIA Daycare Home">
+                        <!--Logo Titles-->
+                        <div class = "logo_titles">
+                            <p class = "logo_title_1"> The Islamic Academy </p>
+                            <p class = "logo_title_2"> DAYCARE </p>
+                        </div>
+                    </div> <!--End daycare_logo-->
+               </a>
+
+                <!--__________________ TIA LOGO______________________ -->
+
+                <a href = "http://www.tiapeace.org/"> <!--Logo redirects to TIA's main site-->
+                    <!--Place logo image in a container-->
+                    <div class = "tilt" id = "TIA_logo">
+                        <!--Logo Image-->
+                        <img class = "logo_image" id = "TIA_img"
+                             src = "images/TIA_logo.png" alt = "TIA Main School Logo"
+                             title = "Go To TIA's Main Site">
+                    </div> <!--End TIA_logo-->
+                </a>
+            </header> <!--End header-->
+
+
+            <!--**********************************************************************
+                  NAVIGATION MENU
+                *******************************************************************-->
+            <nav>
+                <ul id = "nav_menu">
+
+                    <!--Home Tab-->
+                    <li class = "nav_item" id = "home">
+                          <a href = "index.html"> HOME </a> </li>
+                    <!--About Tab-->
+                    <li class = "nav_item" id = "about">
+                          <a href = "about.html"> ABOUT </a> </li>
+                    <!--Staff Tab-->
+                    <li class = "nav_item" id = "staff">
+                          <a href = "staff.html"> STAFF </a> </li>
+                    <!--Programs Tab
+                        Not a part of "nav_item" class because it is unique in that it is
+                        not clickable and contains a sub-menu -->
+                    <li id = "programs"> PROGRAMS
+                          <ul>
+                              <!--Child Care Sub-Tab-->
+                              <li class = "sub_menu" id = "care"> <a href = "programs_care.html"> CHILD CARE </a> </li>
+                              <!--Activities Sub-Tab-->
+                              <li class = "sub_menu" id = "activities"> <a href = "programs_activities.html"> ACTIVITIES </a> </li>
+                              <!--Health and Safety Sub-Tab-->
+                              <li class = "sub_menu" id = "safety"> <a href = "programs_safety.html"> CHILD SAFETY </a> </li>
+                          </ul>
+                    </li> <!--End programs tab-->
+                    <!--Admissions Tab-->
+                    <li class = "nav_item" id = "admissions">
+                          <a href = "admissions.html"> ADMISSIONS </a> </li>
+                    <!--Contact Us Tab-->
+                    <li class = "nav_item" id = "contact">
+                          <a href = "contact.html"> CONTACT US </a> </li>
+                </ul>
+             </nav> <!--End Navigation Menu-->
+
+             <!--***************************************************************************
+                   MAIN CONTENT (Large White Box Containing Content Specific to Home Page)
+                 ************************************************************************-->
+             <div class = "main_content">
+
+                   <!--_______________ Image Carousel (Automatic Slideshow)_________________ -->
+                   <div id = "carousel">
+                       <img src = "images/slide1.png" alt ="Young Girl Drawing">
+                       <!--WARNING: Filler Image (Potentially Copyrighted Image)-->
+                       <img src = "images/slide2.png" alt ="Daycare's Play Area">
+                       <img src = "images/slide3.png" alt ="Children Doing Arts and Crafts">
+                       <img src = "images/slide4.png" alt ="Daycare's Bulletin Board">
+                   </div> <!--End carousel-->
+
+                   <!--_____________ Colored Text Panels (Underneath Carousel)______________ -->
+                  <div class = "section_wrap">
+
+                       <!--About Panel (Sneak Peak of Daycare's Core Values)-->
+                       <section id = "about_panel" class = "column">
+                           <h2> About Us </h2>
+                           <p> Below is a sample of “Lorem ipsum dolor sit” dummy copy text </p>
+                           <!--Learn More Button (Links to About Us Page)-->
+                           <button onclick = "window.location.href='about.html'" class = "learn_button" id = "about_button"> Learn More </button>
+                       </section> <!--End About Panel-->
+
+                       <!--Child Care Panel (Sneak Peak of Child Care Programs)-->
+                       <section id = "care_panel" class = "column">
+                           <h2> Child Care </h2>
+                           <p> Below is a sample of “Lorem ipsum dolor sit” dummy copy text </p>
+                           <!--Learn More Button (Links to Child Care Page)-->
+                           <button onclick = "window.location.href='programs_care.html'" class = "learn_button"> Learn More </button>
+                       </section> <!--End Child Care Panel-->
+
+                       <!--Activities Panel (Sneak Peak of Daycare's Activities)-->
+                       <section id = "activities_panel" class = "column">
+                          <h2> Activities </h2>
+                          <p> Below is a sample of “Lorem ipsum dolor sit” dummy copy text </p>
+                          <!--Learn More Button (Links to Activities Page)-->
+                          <button onclick = "window.location.href='programs_activities.html'" class = "learn_button"> Learn More </button>
+                       </section> <!--End Activities Panel-->
+
+                       <!--Admissions Panel (Sneak Pak of Daycare's Admissions Process)-->
+                       <section id = "admissions_panel" class = "column">
+                          <h2> Admissions </h2>
+                          <p> Below is a sample of “Lorem ipsum dolor sit” dummy copy text </p>
+                          <!--Learn More Button (Links to Admissions Page)-->
+                          <button onclick = "window.location.href='admissions.html'" class = "learn_button"> Learn More </button>
+                       </section> <!--End Admissions Panel-->
+
+                  </div> <!--End section-wrap-->
+
+             </div> <!--End Main Content-->
+
+
+             <!--***************************************************************************
+                   FOOTER (Logo and Daycare Contact Information)
+                 ************************************************************************-->
+            <footer>
+
+                  <!--Animated Toy Train-->
+                  <div>
+                      <img src = "images/train.png" id = "train" alt = "Choo Choo Train">
+                  </div>
+
+                  <!--________________________ DAYCARE LOGO___________________________ -->
+                  <a href = "index.html">
+                      <!--Place logo image and title in a container-->
+                      <div class = "daycare_logo" id = "daycare_footer">
+                          <!--Logo Image (Apple)-->
+                          <img class = "logo_image daycare_img" id = "day_img_footer"
+                               src = "images/daycare_logo.png"  alt = "TIA Daycare Logo"  title = "TIA Daycare">
+                          <!--Logo Titles-->
+                          <div class = "logo_titles">
+                              <p class = "logo_title_1"> The Islamic Academy </p>
+                              <p class = "logo_title_2"> DAYCARE </p>
+                          </div>
+                      </div> <!--End Footer Daycare Logo-->
+                 </a>
+
+                 <!--________________________ Contact Information___________________________ -->
+                 <div class = "footer_contact_info">
+                     <p> <!--Address, Telephone Number, E-mail-->
+                          125 Oakland Ave. &nbsp;&nbsp; Methuen, MA 01844
+                          <br> 857-526-3499 &nbsp; | &nbsp;
+                          <span id = "footer_email">TIAdaycare2014@gmail.com</span>
+                    </p>
+                 </div>
+
+          </footer> <!--End Footer-->
+
+          <!--***************************************************************************
+                VALIDATION ICONS
+              ************************************************************************-->
+          <div id = "icon_sig">
+              <!--Code borrowed from CS110 Course Instructors.-->
+              <a href="http://validator.w3.org/check?uri=referer">
+                  <img src="http://cs.wellesley.edu/~cs110/Icons/valid-html5v2.png"
+                       alt="Valid HTML 5" title="Valid HTML 5" height="31" width="88">
+              </a> <!--HTML Validation Icon-->
+
+              <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                  <img src="http://cs.wellesley.edu/~cs110/Icons/vcss.gif"
+                       alt="Valid CSS" title="Valid CSS" height="31" width="88">
+              </a> <!--CSS Validation Icon-->
+
+              <p>
+                  Created By: Amal Tidjani and Yuanzhen Pan
+                  <br>Copyright 2016
+              </p>
+         </div> <!--End icon_sig-->
+
+      </div> <!--End All Content-->
+
+      <!--_____________________________Javascript Files_____________________________________ -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src = "set_site_colors.js"></script> <!--Sets Site's Color Palette-->
+      <script src = "nav_bar.js"></script> <!--Programs Tab's Drop Down Menu-->
+      <script src = "animate.js"></script> <!--Image Animations (Logo, Train, etc.)-->
+      <script src = "carousel.js"></script> <!--Image Carousel Animation-->
+      <script src = "load.js"></script> <!--Loads JS Functions Onto All Pages-->
+
+   </body> <!--End Body-->
+
+</html>

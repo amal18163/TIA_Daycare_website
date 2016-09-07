@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!--
+FILE NAME: about.html
+WRITTEN BY: Amal Tidjani
+DATE: April 2016
+
+PURPOSE: Daycare's About Us Page
+
+The About Us Page is meant to inform prospective parents of the daycare's
+values and philosophies. The daycare's three values: 1) Nurture,
+2) Discovery/Exploration, and 3) Islamic Faith are highlighted in a
+section of their own with animated image icons. Two sections expanding
+on these highlighted values are included below for prospective parents
+interested in learning more. -->
+
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "author" content = "Amal Tidjani">
+        <title> About Us </title>
+        <link href = "style.css" rel = "Stylesheet">
+
+        <!--Google Fonts: Roboto Condensed, Finger Paint, Amatic SC, Indie Flower, and Gloria Hallelujah -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+
+        <!--Wrapper div that contains all universal html content (i.e. header, main content,
+            and footer) and individual page contents (i.e. sections, images, etc.)-->
+        <div class = "all_content">
+
+            <!--Header dynamically loaded in from index.html-->
+            <div id = "header_here"></div>
+
+            <!--Navigation Menu dynamically loaded in from index.html-->
+            <div id = "nav_here"></div>
+
+
+            <!--***************************************************************************
+                  MAIN CONTENT (Large White Box Containing Content Specific to About Page)
+                ************************************************************************-->
+            <div class = "main_content" id = "main_about">
+
+                  <!--_________________________ Core Values Section _____________________________________ -->
+                  <!-- Large orange section containing three animated image icons corresponding to one
+                       of three core values. -->
+
+                  <section id = "values">
+
+                      <h2 id = "about_heading"> OUR VALUES </h2>
+
+                          <!--_________Core Value 1: Nurture _________________ -->
+                          <div class = "icon_text" id = "icon_text1">
+                              <!--Image Icon (Plant and Sun)-->
+                              <div class = "icon_container" id = "icon_nurture">
+                                    <img src = "images/sun.png" alt = "sun" id = "sun">
+                                    <img src = "images/plant.png" alt = "green plant" id = "plant">
+                              </div>
+                              <!--Icon Label (Nurture)-->
+                              <p class = "icon_label"> Nurture. </p>
+                          </div>
+
+                          <!--_________Core Value 2: Discovery/Exploration _____________ -->
+                          <div class = "icon_text" id = "icon_text2">
+                              <!--Image Icon (Compass and Map)-->
+                              <div class = "icon_container" id = "icon_explore">
+                                  <img src = "images/map.png" alt = "map" id = "map">
+                                  <img src = "images/compass.png" alt = "compass" id = "compass">
+                              </div>
+                              <!--Icon Label (Discovery. Exploration)-->
+                              <p class = "icon_label"> Discovery. Exploration. </p>
+                          </div>
+
+                          <!--_________Core Value 3: Islamic Faith _____________ -->
+                          <!--Not a part of the icon_text class because 3D animation
+                              was inheriting properties that ruined the hover effect-->
+
+                          <div id = "prism">
+                          <!--This code, which produces a 3D rotatable prism
+                              is based off of code submitted by stackexchange
+                              user con.carne http://jsfiddle.net/QMQLQ/ -->
+                                  <div id = "box">
+                                      <!--Prism's Front Face (Quran Cover)-->
+                                      <div class = "face" id ="front">
+                                          <img src = "images/quran1.jpg"  alt = "Quran" width = "150">
+                                          <!--Image Credit/Source:
+                                              http://quranquoteswallpaeprs.blogspot.com/2014/10/the-holy-
+                                              quran-in-english-quran-quotes.html-->
+                                      </div>
+                                      <!--Prism's Right Face (Pages)-->
+                                      <div class = "face" id = "right">
+                                          <img src = "images/quran2.png" alt = "Quran" height = "222">
+                                      </div>
+                                      <!--Prism's Back Face (Quran Back Cover)-->
+                                      <div class = "face" id = "back">
+                                          <img src = "images/quran5.jpg" alt = "Quran" width = "150">
+                                      </div>
+                                      <!--Prism's Left Face (Quran Spine)-->
+                                      <div class = "face" id = "left">
+                                          <img src = "images/quran3.png" alt = "Quran" height = "222">
+                                      </div>
+                                  </div> <!--End box-->
+
+                          </div> <!--End prism-->
+
+                          <!--Icon Label (Islamic Faith)-->
+                          <p class = "icon_label" id = "icon_label3"> Islamic Faith. </p>
+
+                     </section> <!--End Core Values-->
+
+                     <!--_________________________ Text Sections (General Info) _____________________________ -->
+
+                     <div id = "gen_info">
+
+                         <!--Mission Section-->
+                         <section class = "puzzle" id = "mission">
+                            <h2> Our Mission </h2>
+                            <p>
+                              Lorem ipsum dolor sit amet, conse cte tur adipiscing elit, sed
+                              ipsum dolor sit amet Sed ut perspiciatis unde omnis iste natus
+                              error sit voluptatem accusantium dolor em que laudantium, totam
+                              rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                              architecto beatae
+
+                            </p>
+                        </section> <!--End Mission-->
+
+                        <!--Islamic Values Section-->
+                        <section class = "puzzle" id = "islamic">
+                            <h2> Islamic Values </h2>
+                            <p>
+                              Nemo enim ipsam voluptatem quia volu ptas sit aspernatur aut odit aut
+                              fugit, sed quia consequuntur magni dolores eos qui Lorem ipsum dolor sit
+                              amet, conse cte tur adipiscing elit, sed ipsum dolor sit amet Sed ut
+                              perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
+                            </p>
+                        </section> <!--End Islamic Values-->
+
+                    </div> <!--End gen_info-->
+
+          </div> <!--End main_content-->
+
+          <!--Footer dynamically added from index.html-->
+          <div id = "footer_here"> </div>
+
+          <!--Validation Icons and Signature dynamically added from index.html-->
+          <div id = "icon_sig_here"></div>
+
+      </div> <!--End all_content-->
+
+
+      <!--_____________________________Javascript Files_____________________________________ -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src = "set_site_colors.js"></script> <!--Sets Site's Color Palette-->
+      <script src = "nav_bar.js"></script> <!--Programs Tab's Drop Down Menu-->
+      <script src = "animate.js"></script> <!--Image Animations (Logo, Train, etc.)-->
+      <script src = "load.js"></script> <!--Loads JS Functions Onto All Pages-->
+
+  </body>
+
+</html>

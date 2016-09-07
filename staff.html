@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!--
+FILE NAME: staff.html
+WRITTEN BY: Amal Tidjani
+DATE: April 2016
+
+PURPOSE: Daycare's Staff Page:
+
+The Staff Page introduced prospective parents to the daycare's directors/teachers:
+Zakkiyya Witherspoon and Karima Lahyani. Included on this page are the directors'
+educational backgrounds, qualifications, and certifications. This page is divided
+into two columns, with each column containing an image and a textual section
+corresponding to each staff member. -->
+
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "author" content = "Amal Tidjani">
+        <title> Staff </title>
+        <link href = "style.css" rel = "Stylesheet">
+
+        <!--Google Fonts: Roboto Condensed, Finger Paint, Amatic SC, and Indie Flower-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+   </head>
+
+   <body>
+
+        <!--Wrapper div that contains all universal html content (i.e. header, main content,
+            and footer) and individual page contents (i.e. sections, images, etc.)-->
+        <div class = "all_content">
+
+            <!--Header dynamically loaded in from index.html-->
+            <div id = "header_here"> </div>
+
+            <!--Navigation Menu dynamically loaded in from index.html-->
+            <div id = "nav_here"></div>
+
+            <!--***************************************************************************
+                  MAIN CONTENT (Large White Box Containing Content Specific to Staff Page)
+                ************************************************************************-->
+            <div class = "main_content" id = "main_staff">
+
+                <h1>Our Staff</h1>
+
+                <!--_________________________ Column 1: Zakkiyya Witherspoon _____________________________ -->
+                <!-- Includes image and textual information on Zakkiyya Witherspoon and her qualifications-->
+
+                <section class = "staff_column" id = "staff_column1">
+
+                    <!--Zakkiyya's Bio (Placed in Colored Div)-->
+                    <div class = "t_container" id = "staff_t_1"> <!--colored div-->
+                        <h2> Zakkiyya Witherspoon </h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, conse cte tur adipiscing elit, sed
+                          ipsum dolor sit amet Sed ut perspiciatis unde omnis iste natus
+                          error sit voluptatem accusantium dolor em que laudantium, totam
+                          rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                          architecto beatae vitae dicta sunt explica bo. Nemo enim ipsam
+                          voluptatem quia volu ptas sit aspernatur aut odit aut fugit, sed
+                          quia consequuntur magni dolores eos qui
+                        </p>
+                    </div>
+
+                    <!--Zakkiyya's Picture (Placed in Colored Div)-->
+                    <div class = "i_container" id = "staff_i_1"> <!--colored div-->
+                        <img src = "images/zakkiyya2.jpg" alt = "Zakkiyya Witherspoon">
+                        <!--WARNING: Filler Image (Potentially Copyrighted)-->
+                    </div>
+
+              </section> <!--End Zakkiyya Witherspoon-->
+
+
+              <!--_________________________ Column 2: Karima Lahyani _____________________________ -->
+              <!-- Includes image and textual information on Karmia Lahyani and her qualifications-->
+              <section class = "staff_column" id = "staff_column2">
+
+                  <!--Karima's Picture (Placed in Colored Div)-->
+                  <div class = "i_container" id = "staff_i_2">
+                      <img src = "images/karima3.png" alt = "Karima Lahyani">
+                      <!--WARNING: Filler Image (Potentially Copyrighted)-->
+                  </div>
+
+                  <!--Karima's Bio (Placed in Colored Div)-->
+                  <div class = "t_container" id = "staff_t_2">
+                      <h2> Karima Lahyani </h2>
+                      <p>
+                        Nemo enim ipsam voluptatem quia volu ptas sit aspernatur aut odit aut
+                        fugit, sed quia consequuntur magni dolores eos qui Lorem ipsum dolor sit
+                        amet, conse cte tur adipiscing elit, sed ipsum dolor sit amet Sed ut
+                        perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
+                        em que laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                        veritatis et quasi
+                      </p>
+                  </div>
+
+            </section> <!--End Karima Lahyani-->
+
+      </div> <!--End main_content-->
+
+      <!--Footer dynamically added from index.html-->
+      <div id = "footer_here"> </div>
+
+      <!--Validation Icons and Signature dynamically added from index.html-->
+      <div id = "icon_sig_here"></div>
+
+  </div> <!--End all_content-->
+
+
+  <!--_____________________________Javascript Files_____________________________________ -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src = "set_site_colors.js"></script> <!--Sets Site's Color Palette-->
+  <script src = "nav_bar.js"></script> <!--Programs Tab's Drop Down Menu-->
+  <script src = "animate.js"></script> <!--Image Animations (Logo, Train, etc.)-->
+  <script src = "load.js"></script> <!--Loads JS Functions Onto All Pages-->
+
+  </body>
+
+</html>

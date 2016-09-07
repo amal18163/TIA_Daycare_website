@@ -1,0 +1,139 @@
+/*
+FILE NAME: activities.css
+WRITTEN BY: Yuanzhen Pan
+DATE: April 23 2016
+
+PURPOSE: Activities Stylesheet
+CSS Styling for Activities Page
+*/
+
+
+h1{
+  margin-bottom: 15px;
+  background-color: #EF6503;
+}
+
+body{
+  background-color:  #8fccba;
+}
+
+
+#main_activities{
+  height:955px;
+}
+
+.slideshow_buttons {
+  background-color:#ededed;
+  border-radius:42px;
+  display:inline-block;
+  cursor:pointer;
+  color:#777777;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:10px 14px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+.slideshow_buttons:hover {
+  background-color:#dfdfdf;
+}
+.slideshow_buttons:active {
+  position:relative;
+  top:1px;
+}
+
+#manual_slideshow{
+  position:relative;
+  float:left;
+  width: 500px;
+  height:450px;
+  margin-left: 15px;
+  padding: 0px;
+  margin-bottom:0px;
+}
+
+#slideshow img{
+  width: 500px;
+  height:450px;
+  clear:both;
+  margin: 0px;
+  padding: 0px;
+}
+
+#slideshow {
+ overflow: hidden;
+ width: 500px;
+ height:450px;
+ margin: 0px;
+ padding: 0px;
+}
+
+#previous_button{
+  z-index: 20;
+  position:absolute;;
+  top:50%;
+  left:1%;
+}
+#next_button{
+  z-index: 20;
+  position:absolute;
+  top:50%;
+  left:90%;
+}
+
+.heading{
+  background-color:#f48f97;
+  margin-top: 50px;
+  z-index: -2;
+}
+
+.section_wrap{
+  background-color: white;
+  width:100%;
+  height:1000px;
+  position:relative;
+}
+
+
+.activities_text h2{
+  margin-top: 15px;
+  font-family: "Finger Paint", cursive;
+  font-size: 120%;
+}
+
+.activities_text{
+  width:365px;
+  float: left;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  padding-left:10px;
+}
+
+
+#arts_and_crafts{
+  background-color: #FA8784;
+  width:470px;
+  height:310px;
+  margin-left:15px;
+  margin-top: -80px;
+  padding:15px;
+}
+
+#story_time{
+  background-color:#B8C601;
+  height:230px;
+  padding:15px;
+}
+
+#circle_time{
+  background-color:#FD8C39;
+  height:230px;
+  padding:15px;
+}
+
+#structured_play{
+  background-color:#FED40C;
+  height:230px;
+  padding:15px;
+}

@@ -1,0 +1,39 @@
+/*
+FILE NAME: admissions.css
+WRITTEN BY: Yuanzhen Pan
+DATE: April 19 2016
+
+PURPOSE: Admissions Stylesheet
+CSS Styling for Admissions Page
+*/
+
+
+body{
+  background-color:  #8fccba;
+}
+
+h1{
+  margin-bottom: 15px;
+  background-color: #EF6503;
+  border-color:#FD8C39;
+}
+
+#admission_text{
+  background-color: #FED40C;
+  width:885px;
+  height:175px;
+  margin-left: 15px;
+  padding:15px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: x-large;
+}
+
+#admission_pic{
+  margin-left:15px;
+  margin-bottom: 7.5px;
+  width:915px;
+}
+
+#main_admissions{
+  height:855px;
+}

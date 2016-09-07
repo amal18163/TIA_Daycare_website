@@ -1,0 +1,77 @@
+/*
+FILE NAME: contact.css
+WRITTEN BY: Yuanzhen Pan
+DATE: April 19 2016
+
+PURPOSE: Contact Stylesheet
+CSS Styling for Contact Page
+
+When we validate the contact page, the validator generated a warning regarding
+-webkit-transition-duration we used to style the button. However, we are told
+by Scott to ignore this warning and keep the styling. 
+*/
+
+
+
+body{
+  background-color:  #8fccba;
+}
+
+#TIAname{
+  font-size: 25px;
+}
+
+
+#contact_info{
+  margin-top: 15px;
+  width: 315px;
+  height:185px;
+  float:right;
+  padding: 0px 15px 15px 15px ;
+  display:block;
+  margin-right: 15px;
+  font-size: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#map{
+  margin-left:15px;
+  width:550px;
+  height:500px;
+  margin-right:15px;
+  margin-top:15px;
+}
+
+form{
+  padding:20px;
+  width:305px;
+  height:240px;
+  display:block;
+  float:right;
+  margin-top:-285px;
+  margin-right: 15px;
+  font-size:20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#main_contact{
+  height:645px;
+}
+
+
+#submit_message {
+    background-color: #bfbfbf;
+    border: #b3b3b3;
+    color: white;
+    font-size: 16px;
+    margin: 4px 2px;
+    /* time needed to change color of the button when hovered over*/
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#submit_message:hover{
+  background-color: #4CAF50;
+}
